@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Template</title>
+    <style>
+        .main
+        {
+            height: 150px;
+            width: 100%;
+            margin: 0px;
+            background-color: green;
+        }
+
+        .box
+        {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .item
+        {
+            height: 437px;
+        }
+
+        @media (max-width: 800px)
+        {
+            .box
+            {
+                flex-direction: column;
+            }
+            
+            .item
+            {
+                height: 145px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main">
+        Header
+    </header>
+    <div class="box">
+        <article class="item" style="background-color:lightgray; flex-grow: 3">Article</article>
+        <aside class="item" style="background-color:beige; flex-grow: 1">Aside</aside>
+        <nav class="item" style="background-color:gray; flex-grow: 1">Navigation</nav>
+    </div>
+    <footer class="main">
+        Footer
+    </footer>
+</body>
+</html>
